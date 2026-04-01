@@ -5,13 +5,18 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <style>
-   body { margin: 0; background: #07080f; color: #eee; font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; }
+   body { margin: 0; overflow: hidden; background: #07080f; }
+   iframe { width: 100%; height: 100vh; border: none; }
  </style>
- <script>
-   window.location.href = "https://script.google.com/macros/s/AKfycbwn0DJr5nggw-SLlH64SPENlG1Foqo1lo_kwGUlS_tZtXOpbLsolwXQ5pJldEi-7wBC/exec?r=home";
- </script>
 </head>
 <body>
- <p>Redirecting...</p>
+ <iframe id="app" allow="clipboard-write"></iframe>
+ <script>
+   var BASE = "https://script.google.com/macros/s/AKfycbyAh-KIgXIkr9deMIi9B1bbbMruuy7u5nbS0TnS2jmbVJVphUneZgxgTyRKq9Q-uqTi/exec";
+   var params = window.location.search || "?r=home";
+   document.getElementById("app").src = BASE + params;
+ </script>
 </body>
 </html>
+
+
