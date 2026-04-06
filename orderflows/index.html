@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
  <title>OrderFlow</title>
@@ -11,5 +11,27 @@
 </head>
 <body>
  <iframe src="https://script.google.com/macros/s/AKfycbyU-eBV9-igAOUB4KS7zWIpGg3QneVtUgg7Hvk_QdVxq-cz9qmAPSUMgbQWORutqJPE/exec?r=home" allow="clipboard-write"></iframe>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>OrderFlow</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+   body { margin: 0; overflow: hidden; background: #07080f; }
+   iframe { width: 100%; height: 100vh; border: none; }
+ </style>
+</head>
+<body>
+ <iframe id="app" allow="clipboard-write"></iframe>
+ <script>
+   var BASE = "https://script.google.com/macros/s/AKfycbyU-eBV9-igAOUB4KS7zWIpGg3QneVtUgg7Hvk_QdVxq-cz9qmAPSUMgbQWORutqJPE/exec";
+   var params = window.location.search || "?r=home";
+   document.getElementById("app").src = BASE + params;
+ </script>
 </body>
 </html>
